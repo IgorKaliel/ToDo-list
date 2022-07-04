@@ -1,0 +1,82 @@
+.task {
+  width: 775px;
+  max-width: 775px;
+
+  margin: auto;
+  display: flex;
+  margin-top: 3rem;
+}
+
+.taskBox {
+  flex: 1;
+}
+
+.taskContent {
+  padding: 1rem;
+}
+
+.taskContent header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.2;
+}
+
+.taskContent header .blue_text {
+  color: var(--blue-500);
+}
+
+.taskContent header .purple_text {
+  color: var(--purble-300);
+}
+
+.radius{ 
+  padding: 2px 8px;
+  font-size: 0.775rem;
+  color: var(--gray-200);
+  background: var(--gray-400);
+  border-radius: 999px;
+}
+
+.taskList{
+  margin-top: 2rem;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+ 
+}
+
+.taskList label {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-self: stretch;
+  padding: 1rem;
+}
+
+.taskList label input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 2px solid var(--blue-300);
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.taskList label input[type="checkbox"]:checked {
+  background: var(--purble-300);
+  border-color: var(--purble-300);
+}
+
+
+.taskList + .taskList {
+  margin-top: 2rem;
+}
